@@ -1,7 +1,11 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URI = 'postgresql://postgres:sofia@localhost:5432/agenda'
+# Conexion base local
+#DATABASE_URI = 'postgresql://postgres:sofia@localhost:5432/agenda'
+
+# Conexion base Render
+DATABASE_URI = 'postgresql://agenda_1wpj_user:PsXHZrTAjtMeyKoBCSCpTdR8wKXol3i1@dpg-db6lc4rrjlhs73faelcg-a.oregon-postgres.render.com/agenda_1wpj'
 
 def conectar():
     # Crea el motor de conexion (el enlace a la base de datos)
